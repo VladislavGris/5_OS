@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/vladislav/60DC9EB4DC9E8446/5_Sem/ОС/LW2/LW2/main.c
+stdio.h
+-
+unistd.h
+-
+sys/types.h
+-
+

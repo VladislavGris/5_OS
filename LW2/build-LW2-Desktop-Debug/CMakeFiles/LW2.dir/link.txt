@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/LW2.dir/main.c.o  -o LW2 
