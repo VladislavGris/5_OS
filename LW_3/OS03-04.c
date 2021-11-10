@@ -5,7 +5,7 @@ int main()
 {
     for(int i = 1; i <= 1000; i++){
         printf("%d-%d\n",getpid(),i);
-        sleep(2);
+        sleep(1);
     }
     return 0;
 }

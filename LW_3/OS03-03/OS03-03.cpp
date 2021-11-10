@@ -20,4 +20,5 @@ int main()
     catch (char* msg) {
         std::wcout << L"ERROR: " << msg << std::endl;
     }
+    system("pause");
 }

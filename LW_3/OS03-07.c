@@ -10,11 +10,12 @@ int main(int argc, char *argv[]) {
     
 	
     
-	for(int i = 1; i <= 100; i++){
+	for(int i = 1; i <= 10; i++){
         printf("%s %d-%d\n",PROCESS_NAME, getpid(),i);
         sleep(1);
     }
-    printf("Before process start");
+    printf("Before process start %d\n", getpid());
+    sleep(1);
     execv("./OS03-05-01", args);
     printf("After process start");
 	return 0;

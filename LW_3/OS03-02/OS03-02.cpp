@@ -11,7 +11,6 @@ int main()
     PROCESS_INFORMATION pi2;
     ZeroMemory(&si1, sizeof(STARTUPINFO)); si1.cb = sizeof(STARTUPINFO);
     ZeroMemory(&si2, sizeof(STARTUPINFO)); si2.cb = sizeof(STARTUPINFO);
-
     if (CreateProcess(process_path_1, NULL, NULL, NULL, FALSE, CREATE_NEW_CONSOLE, NULL, NULL, &si1, &pi1)) {
         std::cout << "Process OS03-02-01 created" << std::endl;
     }
