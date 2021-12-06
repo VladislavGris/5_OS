@@ -1,0 +1,2 @@
+wmic memorychip get banklabel, capacity, speed, manufacturer
+Get-WmiObject -class "Win32_PhysicalMemory"
