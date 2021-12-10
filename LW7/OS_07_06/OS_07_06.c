@@ -13,7 +13,7 @@ void* thread1(void* arg){
         if(i == 30) pthread_mutex_lock(&mx);
         if(i == 60) pthread_mutex_unlock(&mx);
         printf("Thread1: %d\n",i);
-        sleep(0.1);
+        usleep(100000);
     }
     pthread_exit("Thread1 end");
 }
@@ -23,7 +23,7 @@ void* thread2(void* arg){
         if(i == 30) pthread_mutex_lock(&mx);
         if(i == 60) pthread_mutex_unlock(&mx);
         printf("Thread2: %d\n",i);
-        sleep(0.1);
+        usleep(100000);
     }
     pthread_exit("Thread2 end");
 }
@@ -41,7 +41,7 @@ int main(){
         if(i == 30) pthread_mutex_lock(&mx);
         if(i == 60) pthread_mutex_unlock(&mx);
         printf("Main thread: %d\n",i);
-        sleep(0.1);
+        usleep(100000);
     }
 
     int status1 = pthread_join(a_th1, (void**)&r_th1);
